@@ -1,6 +1,6 @@
 class GameController < ApplicationController
   def rules
-    render({ :template => "game/rules.html.erb" })
+    render({ :template => "game/rules" })
   end
 
   def rock
@@ -15,7 +15,7 @@ class GameController < ApplicationController
       @outcome = "won"
     end
 
-    render({ :template => "game/play.html.erb" })
+    render({ :template => "game/play" })
   end
 
   def paper
@@ -30,7 +30,7 @@ class GameController < ApplicationController
       @outcome = "lost"
     end
 
-    render({ :template => "game/play.html.erb" })
+    render({ :template => "game/play" })
   end
 
   def scissors
@@ -45,6 +45,6 @@ class GameController < ApplicationController
       @outcome = "tied"
     end
 
-    render({ :template => "game/play.html.erb" })
+    render({ :template => "game/play" })
   end
 end 
